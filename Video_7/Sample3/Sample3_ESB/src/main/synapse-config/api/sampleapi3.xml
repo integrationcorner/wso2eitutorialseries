@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/sampleapi3" name="sampleapi3" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" url-mapping="/res1">
+        <inSequence>
+            <property expression="get-property('query.param.qp')" name="qp1" scope="default" type="STRING"/>
+            <property expression="$ctx:query.param.qp" name="qp2" scope="default" type="STRING"/>
+            <property expression="$url:qp" name="qp3" scope="default" type="STRING"/>
+            <payloadFactory media-type="json">
+                <format>{&#xd;
+"Method1" : "$1",&#xd;
+"Method2" : "$2",&#xd;
+"Method3" : "$3"&#xd;
+}</format>
+                <args>
+                    <arg evaluator="xml" expression="get-property('qp1')"/>
+                    <arg evaluator="xml" expression="get-property('qp2')"/>
+                    <arg evaluator="xml" expression="get-property('qp3')"/>
+                </args>
+            </payloadFactory>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

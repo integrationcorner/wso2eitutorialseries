@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="sample7api" groupId="com.example.Sample7_ESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/sample7api.xml</file>
+    </artifact>
+    <artifact name="MessageStoreAPI" groupId="com.example.Sample7_ESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/MessageStoreAPI.xml</file>
+    </artifact>
+    <artifact name="SampleSequence" groupId="com.example.Sample7_ESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/SampleSequence.xml</file>
+    </artifact>
+</artifacts>

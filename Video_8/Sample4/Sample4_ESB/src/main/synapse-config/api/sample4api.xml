@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/sample4api" name="sample4api" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/{FName}/{LName}">
+        <inSequence>
+            <property expression="get-property('uri.var.FName')" name="res1" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.LName')" name="res2" scope="default" type="STRING"/>
+            <payloadFactory media-type="json">
+                <format>{"Msg" : "$1"}</format>
+                <args>
+                    <arg evaluator="xml" expression="fn:concat('Hello, ',get-property('res1'), ' ', get-property('res2'))"/>
+                </args>
+            </payloadFactory>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
