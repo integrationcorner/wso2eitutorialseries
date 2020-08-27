@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+    <item>
+        <file>Sample9WSPolicy.xml</file>
+        <path>/_system/config/wspolicy</path>
+        <mediaType>application/wspolicy+xml</mediaType>
+    </item>
+</resources>

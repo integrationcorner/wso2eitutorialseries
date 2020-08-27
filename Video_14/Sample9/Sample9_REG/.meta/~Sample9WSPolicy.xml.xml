@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><resource name="Sample9WSPolicy.xml" isCollection="false" path="/_system/config/wspolicy/Sample9_REG/Sample9WSPolicy.xml" registryUrl="https://localhost:9443/registry" status="added">
+    <mediaType>application/wspolicy+xml</mediaType>
+</resource>
