@@ -1,0 +1,29 @@
+{
+  "$schema" : "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "outputType" : "XSD",
+  "id" : "http://wso2jsonschema.org",
+  "title" : "Customer",
+  "type" : "object",
+  "properties" : {
+    "Name" : {
+      "id" : "http://wso2jsonschema.org/Name",
+      "type" : "string"
+    },
+    "DOB" : {
+      "id" : "http://wso2jsonschema.org/DOB",
+      "type" : "string"
+    },
+    "Address1" : {
+      "id" : "http://wso2jsonschema.org/Address1",
+      "type" : "string"
+    },
+    "Address2" : {
+      "id" : "http://wso2jsonschema.org/Address2",
+      "type" : "string"
+    }
+  },
+  "namespaces" : [ {
+    "prefix" : "xsi",
+    "url" : "http://www.w3.org/2001/XMLSchema-instance"
+  } ]
+}

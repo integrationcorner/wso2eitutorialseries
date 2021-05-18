@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="Request" groupId="com.example.Sample10_REG.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>Request.xsd</file>
+            <path>/_system/governance/contracts</path>
+            <mediaType>application/x-xsd+xml</mediaType>
+        </item>
+    </artifact>
+    <artifact name="Response" groupId="com.example.Sample10_REG.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>Response.xsd</file>
+            <path>/_system/governance/contracts</path>
+            <mediaType>application/x-xsd+xml</mediaType>
+        </item>
+    </artifact>
+    <artifact name="Sample10DataMapperConfig" groupId="com.example.Sample10_REG.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>Sample10DataMapperConfig.dmc</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+    <artifact name="Sample10DataMapperConfig_inputSchema" groupId="com.example.Sample10_REG.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>Sample10DataMapperConfig_inputSchema.json</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+    <artifact name="Sample10DataMapperConfig_outputSchema" groupId="com.example.Sample10_REG.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>Sample10DataMapperConfig_outputSchema.json</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+    <artifact name="Sample10DataMapperConfig_xsltStyleSheet" groupId="com.example.Sample10_REG.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>Sample10DataMapperConfig_xsltStyleSheet.xml</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+</artifacts>

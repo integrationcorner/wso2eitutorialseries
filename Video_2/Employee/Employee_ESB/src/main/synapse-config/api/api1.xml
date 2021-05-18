@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/api1" name="api1" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <log level="custom">
+                <property name="LogPoint" value="Message Received in Sequence"/>
+            </log>
+            <store messageStore="InMemoryMS"/>
+            <log level="custom">
+                <property name="LogPoint" value="Message Posted to Message Store"/>
+            </log>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

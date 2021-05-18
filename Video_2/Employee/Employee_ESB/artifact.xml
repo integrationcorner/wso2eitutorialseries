@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="EmployeeAPI" groupId="com.employee.Employee_ESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/EmployeeAPI.xml</file>
+    </artifact>
+    <artifact name="api1" groupId="com.employee.Employee_ESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/api1.xml</file>
+    </artifact>
+    <artifact name="api2" groupId="com.employee.Employee_ESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/api2.xml</file>
+    </artifact>
+    <artifact name="api3" groupId="com.employee.Employee_ESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/api3.xml</file>
+    </artifact>
+    <artifact name="api4" groupId="com.employee.Employee_ESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/api4.xml</file>
+    </artifact>
+    <artifact name="LoadBalanceEndP" groupId="com.employee.Employee_ESB.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/LoadBalanceEndP.xml</file>
+    </artifact>
+    <artifact name="ReceipientList" groupId="com.employee.Employee_ESB.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ReceipientList.xml</file>
+    </artifact>
+    <artifact name="MessageprocessorSequence" groupId="com.employee.Employee_ESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/MessageprocessorSequence.xml</file>
+    </artifact>
+    <artifact name="Sequence1" groupId="com.employee.Employee_ESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/Sequence1.xml</file>
+    </artifact>
+    <artifact name="Sequence2" groupId="com.employee.Employee_ESB.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/Sequence2.xml</file>
+    </artifact>
+    <artifact name="api5" groupId="com.employee.Employee_ESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/api5.xml</file>
+    </artifact>
+</artifacts>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/emp" name="EmployeeAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <payloadFactory media-type="xml">
+                <format>
+                    <soapenv:Envelope xmlns:dat="http://ws.wso2.org/dataservice" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+                        <soapenv:Header/>
+                        <soapenv:Body>
+                            <dat:getEmployeeRecord>
+                                <dat:EMP_ID>$1</dat:EMP_ID>
+                            </dat:getEmployeeRecord>
+                        </soapenv:Body>
+                    </soapenv:Envelope>
+                </format>
+                <args>
+                    <arg evaluator="json" expression="$.employee.empId"/>
+                </args>
+            </payloadFactory>
+            <header name="Action" scope="default" value="urn:getEmployeeRecord"/>
+            <call>
+                <endpoint>
+                    <address format="soap11" uri="http://localhost:8280/services/getEmployee">
+                        <suspendOnFailure>
+                            <initialDuration>-1</initialDuration>
+                            <progressionFactor>1</progressionFactor>
+                        </suspendOnFailure>
+                        <markForSuspension>
+                            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                        </markForSuspension>
+                    </address>
+                </endpoint>
+            </call>
+            <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

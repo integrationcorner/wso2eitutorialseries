@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="MessageprocessorSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="custom">
+        <property name="LogPoint" value="Started Message Processing"/>
+        <property expression="$body" name="MessageBody"/>
+        <property name="LogPoint" value="Finished Message Processing"/>
+    </log>
+    <drop/>
+</sequence>

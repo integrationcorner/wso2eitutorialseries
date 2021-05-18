@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="ReceipientList" xmlns="http://ws.apache.org/ns/synapse">
+    <recipientlist>
+        <endpoint>
+            <http>
+                <suspendOnFailure>
+                    <initialDuration>-1</initialDuration>
+                    <progressionFactor>1</progressionFactor>
+                </suspendOnFailure>
+                <markForSuspension>
+                    <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                </markForSuspension>
+            </http>
+        </endpoint>
+        <endpoint>
+            <http>
+                <suspendOnFailure>
+                    <initialDuration>-1</initialDuration>
+                    <progressionFactor>1</progressionFactor>
+                </suspendOnFailure>
+                <markForSuspension>
+                    <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                </markForSuspension>
+            </http>
+        </endpoint>
+        <endpoint>
+            <http>
+                <suspendOnFailure>
+                    <initialDuration>-1</initialDuration>
+                    <progressionFactor>1</progressionFactor>
+                </suspendOnFailure>
+                <markForSuspension>
+                    <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                </markForSuspension>
+            </http>
+        </endpoint>
+    </recipientlist>
+    <description/>
+</endpoint>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/api3" name="api3" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" url-mapping="/*">
+        <inSequence>
+            <conditionalRouter continueAfter="false">
+                <conditionalRoute asynchronous="true" breakRoute="false">
+                    <condition>
+                        <match regex="/api3/res1/*" type="url"/>
+                    </condition>
+                    <target sequence="Sequence1"/>
+                </conditionalRoute>
+                <conditionalRoute asynchronous="true" breakRoute="false">
+                    <condition>
+                        <match regex="/api3/res2/*" type="url"/>
+                    </condition>
+                    <target sequence="Sequence2"/>
+                </conditionalRoute>
+            </conditionalRouter>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/api5" name="api5" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <dblookup>
+                <connection>
+                    <pool>
+                        <dsName/>
+                    </pool>
+                </connection>
+                <statement>
+                    <sql><![CDATA[SELECT * FROM GSB_SCHEMA.SRV_CAT WHERE ID=?]]></sql>
+                    <parameter type="INTEGER" value="1"/>
+                </statement>
+            </dblookup>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

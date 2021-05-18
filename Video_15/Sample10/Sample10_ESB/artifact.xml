@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="Sample10_API" groupId="com.example.Sample10_ESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/Sample10_API.xml</file>
+    </artifact>
+</artifacts>
